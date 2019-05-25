@@ -1,1 +1,1 @@
-import '.style.css';
+import '.homework_6.css';
