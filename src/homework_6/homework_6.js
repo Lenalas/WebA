@@ -1,1 +1,1 @@
-import '.homework_6.css';
+import './homework_6.css';
