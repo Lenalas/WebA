@@ -1,0 +1,16 @@
+.logo {
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo__thin {
+    font-weight: 200;
+}
+
+@media screen and (max-width: 992px) {
+    .logo_inverted {
+        color: #FFF;
+    }
+}

@@ -1,0 +1,30 @@
+@import './variable.scss';
+
+// .page__header.active:after {
+//     background-color: #FFF;
+// }
+
+.page {
+    max-width: $pageMaxWidth;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: 50px;
+        &:after {
+            width: 100vw;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            background: #ececec;
+        }
+    }
+
+    &__menu {
+        border: 1px solid aqua;
+    }
+}

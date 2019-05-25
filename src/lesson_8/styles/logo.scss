@@ -1,0 +1,15 @@
+@import './mixins.scss';
+
+.logo {
+    @include absoluteCenter;
+}
+
+.logo__thin {
+    font-weight: 200;
+}
+
+@media screen and (max-width: 992px) {
+    .logo_inverted {
+        color: #FFF;
+    }
+}

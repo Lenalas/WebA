@@ -1,0 +1,91 @@
+@import "./mixins.scss";
+@import "./media.scss";
+
+.nav {
+  display: flex;
+  position: relative;
+
+  &__btn {
+    display: none;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    width: 40px;
+    @include hoveredUnderlined(red);
+    @include tablet {
+      display: inherit;
+      z-index: inherit;
+      color: black;
+    }
+
+    &:before {
+      content: "Open";
+      @include absoluteCenter;
+    }
+  }
+
+  &__item {
+    margin-right: 30px;
+    display: flex;
+    flex-grow: 1;
+    @include laptop {
+        background: aqua;
+    }
+    @include tablet {
+      margin: 0;
+      flex-grow: 0;
+      height: 30px;
+      background: red;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    height: 100%;
+    @include tablet {
+      position: absolute;
+      background-color: rgb(0, 0, 0);
+      flex-direction: column;
+      width: 100vw;
+      box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.24);
+      height: 100vh;
+      padding-top: 130px;
+      visibility: hidden;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+  }
+  &__link {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #231f20;
+    @include hoveredUnderlined(blue);
+    @include tablet {
+      color: #fff;
+    }
+  }
+
+  &_opened {
+    > .nav__menu {
+      @include tablet {
+        visibility: visible;
+        pointer-events: inherit;
+        opacity: 1;
+      }
+    }
+
+    > .nav__btn {
+      @include tablet {
+        color: #fff;
+        z-index: 1;
+        &:before {
+          content: "Close";
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 575px;
+
+@mixin desktop {
+    @media screen and (min-width: $xl) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width: $xl - 1px) {
+        @content;
+    }
+}
+
+
+@mixin tablet {
+    @media screen and (max-width: $lg - 1px) {
+        @content;
+    }
+}
+
+/* LAPTOPS | IPADS | L*/
+
+
+/* TABLETS | IPADS | MD */
+@mixin phablet {
+    @media screen and (max-width: $md - 1px) {
+        @content;
+    }
+}
+
+/* PHONE | SM */
+@mixin mobile {
+    @media screen and (max-width: $sm - 1px) {
+        @content;
+    }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="43px" viewBox="0 0 40 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>CACA49C2-1DDA-4F80-8973-5384CF0AF657</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M166.993329,126 C165.892444,126 165,126.893127 165,128.000157 L165,471.999843 C165,473.104499 165.893617,474 166.993329,474 L633.006671,474 C634.107556,474 635,473.106873 635,471.999843 L635,128.000157 C635,126.895501 634.106383,126 633.006671,126 L166.993329,126 Z" id="path-1"></path>
+        <filter x="-3.2%" y="-4.3%" width="106.4%" height="108.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.247058824   0 0 0 0 0.305882353   0 0 0 0 0.352941176  0 0 0 0.108667346 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Browser-Not-Supported" transform="translate(-535.000000, -277.000000)">
+            <g id="Lightbox-Background">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Browser-Icons---Grayscale" transform="translate(224.000000, 276.000000)" fill="#EFEFEF">
+                <g id="opera" transform="translate(311.316355, 1.745045)">
+                    <path d="M19.7257415,41.5416043 C8.8315153,41.5416043 0,32.2421994 0,20.7708021 C0,9.29940487 8.8315153,0 19.7257415,0 C30.6199678,0 39.4514831,9.29940487 39.4514831,20.7708021 C39.4514831,32.2421994 30.6199678,41.5416043 19.7257415,41.5416043 Z M19.7257415,38.0211293 C25.5467341,38.0211293 26.7706492,30.2978948 26.7706492,20.7708021 C26.7706492,11.2437095 25.5260947,3.52047494 19.7257415,3.52047494 C13.9253883,3.52047494 12.6808338,11.2437095 12.6808338,20.7708021 C12.6808338,30.2978948 13.904749,38.0211293 19.7257415,38.0211293 Z" id="Oval-1"></path>
+                </g>
+            </g>
+            <g id="Browser-Icons---Color" transform="translate(224.000000, 276.000000)" fill="#FA6758">
+                <g id="opera" transform="translate(311.300731, 1.859521)">
+                    <path d="M19.7335081,41.4708952 C8.83499252,41.4708952 0,32.1873191 0,20.7354476 C0,9.2835761 8.83499252,0 19.7335081,0 C30.6320237,0 39.4670162,9.2835761 39.4670162,20.7354476 C39.4670162,32.1873191 30.6320237,41.4708952 19.7335081,41.4708952 Z M19.7335081,37.9564125 C25.5567926,37.9564125 26.7811896,30.2463239 26.7811896,20.7354476 C26.7811896,11.2245713 25.5361451,3.51448264 19.7335081,3.51448264 C13.9308712,3.51448264 12.6858266,11.2245713 12.6858266,20.7354476 C12.6858266,30.2463239 13.9102237,37.9564125 19.7335081,37.9564125 Z" id="Oval-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

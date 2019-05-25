@@ -1,0 +1,408 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+body{
+    margin: 0 auto;
+}
+
+body,
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h3,
+h4,
+h5,
+h6{
+    font-size: 32px;
+    color: #4e5665;
+}
+
+.all-fluid{
+    width: 100%;
+}
+
+.fluid:first-child{
+    background: url("../image/land.png") no-repeat center top;
+	height: 700px;
+	background-size: cover
+}
+
+.frame{
+    display: block;
+    height: 620px;
+    border: solid 2px white;
+    width: 94%;
+    margin: 0 auto;
+    text-align: center;
+    transform: translate(0%, 6%);
+    border-bottom: none;
+}
+
+.top-text:first-child{
+    height: 98%;
+    line-height: 540px;
+    display: block;
+    position: relative;
+}
+
+h1{
+    font-size: 12vw;
+    color: white;
+}
+
+.top-text:last-child{
+    display: block;
+    position: relative;
+}
+
+h2{
+    font-size: 1.5vw;
+    color: white;
+}
+
+h2:before, h2:after{
+    content: "";
+    display: inline-block;
+    width: 32.5%;
+    margin: 0 .5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 2px solid;
+}
+h2:after{
+    margin: 0 -55% 0 .5em;
+}
+
+.global-nav{
+    border-bottom: solid 1px #d0d4d8;
+    height: 70px;
+}
+
+.global-nav_menu{
+    font-size: 0px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.global-nav_link{
+    display: inline-block;
+    color: #909090;
+    text-decoration: none;
+    height: 100%;
+    line-height: 70px;
+    border-bottom: solid 2px transparent;
+}
+
+.global-nav_item{
+    display: inline;
+    font-size: 20px;
+    color: #909090;
+    height: 100%;
+    width: 14%;
+    list-style: none;
+    padding: 10px;
+}
+
+.global-nav_link:hover{
+    color: #4e5665;
+    border-bottom: solid 2px #089bd9;
+}
+
+.fluid:nth-child(3){
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.main-content{
+    height: 450px;
+    margin: 0 auto;
+    border-bottom: solid 1px #d0d4d8;
+}
+
+.content{
+    height: 130px;
+    display: inline-block;
+}
+
+.items{
+    display: inline-block;
+    width: 20%;
+    height: 80px;
+}
+
+.items img{
+    width: 25%;
+}
+
+.content:first-child{
+    text-align: center;
+    line-height: 130px;
+    height: 130px;
+    color: #4e5665;
+    font-size: 25px;
+}
+
+.describe{
+    padding: 0 180px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.content:nth-child(2){
+    line-height: 24px;
+}
+
+.content:last-child{
+    display: block;
+    width: 100%;
+}
+
+.num{
+    font-size: 20px;
+    color: #4e5665;
+    line-height: 40px;
+    font-weight: 100;
+}
+
+.main-content-about{
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.about{
+    color: #909090;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.more{
+    text-decoration: none;
+    color: #089bd9;
+}
+
+.fluid:nth-child(4){
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 1000px;
+}
+
+.about-content:first-child{
+    height: 100px;
+    line-height: 100px;
+    font-size: 25px;
+    color: #4e5665;
+}
+
+.about-content:nth-child(2){
+    line-height: 24px;
+}
+
+.about-content:nth-child(3){
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    max-width: 1600px;
+    height: 550px;
+}
+
+.about-content:nth-child(4){
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    max-width: 1600px;
+    height: 550px;
+}
+
+.insert{
+    display: inline-block;
+    width: 50%;
+    position: relative;
+}
+
+.ins{
+    width: 570px;
+    height: 428px;
+}
+
+.shadow{
+    display: block;
+    width: 470px;
+    height: 289px;
+    background-color: white;
+    box-shadow: 0 0 70px -20px;
+    z-index: 100;
+    position: absolute;
+    transform: translate(-27%, 38%);
+}
+
+.inside{
+    display: block;
+    border: solid 1px;
+    transform: translate(0%, 7%);
+    width: 90%;
+    height: 88%;
+    margin-left: 11px;
+}
+
+.ins img{
+    transform: translate(50%, 10%);
+}
+
+.img-insert{
+    display: block;
+    position: absolute;
+}
+
+.img-insert img{
+    width: 570px;
+    height: 428px;
+}
+
+.shadow-box{
+    display: block;
+    width: 470px;
+    height: 289px;
+    background-color: white;
+    box-shadow: 0 0 70px -20px;
+    z-index: 100;
+    position: absolute;
+    transform: translate(110%, 19%);
+}
+
+.king-penguin:first-child{
+    display: block;
+    height: 130px;
+    line-height: 40px;
+}
+
+.king-penguin:nth-child(2){
+    
+}
+
+.king-penguin:last-child{
+    display: block;
+    height: 100px;
+    padding-top: 50px;
+}
+
+.top-text{
+    font-size: 20px;
+    color: #089bd9;
+}
+
+.king-penguin img{
+    width: 332px;
+    height: 775px;
+}
+
+.ant-in-photos:first-child{
+    display: block;
+    height: 300px;
+}
+
+.ant-in-photos:last-child{
+    display: block;
+    height: 520px;
+}
+
+h6{
+    padding-top: 60px;
+}
+
+.ant-in-photos .describe{
+    padding-top: 50px;
+}
+
+.about-content:nth-child(6){
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-content:nth-child(7){
+    display: block;
+    height: 250px;
+    background-color: #f8f8f8;
+    border-top: solid 1px #d0d4d8;
+    font-size: 0px;
+}
+
+.last-content{
+    display: inline-block;
+    width: 20%;
+    height: 250px;
+    font-size: 24px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.last-content:first-child{
+    text-align: center;
+}
+
+.last-content li{
+    list-style-type: none;
+}
+
+.last-content li a{
+    text-decoration: none;
+    width: 84px;
+    height: 19px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    color: #505050;
+}
+
+.last-content p a{
+    text-decoration: none;
+    width: 77px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.33;
+    letter-spacing: normal;
+    color: #4e5665;
+}
+
+.last-content-text{
+
+}
+
+.last-content-text:first-child{
+    height: 30%;
+    line-height: 130px;
+    font-size: 34px;
+    color: #37c491;
+}
+
+.last-content-text:last-child{
+    
+}

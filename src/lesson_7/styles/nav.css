@@ -1,0 +1,87 @@
+.nav {
+    display: flex;
+    position: relative;
+}
+
+.nav__btn {
+    display: none;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    width: 40px;
+}
+.nav__btn:before {
+    content: 'Open';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav__item {
+    margin-right: 30px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav__menu {
+    display: flex;
+    height: 100%;
+}
+
+.nav__link {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #231f20;
+}
+
+@media screen and (max-width: 992px) {
+    .nav__btn {
+        display: inherit;
+        z-index: inherit;
+        color: black;
+    }
+    .nav__menu {
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        flex-direction: column;
+        width: 100vw;
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.24);
+        height: 100vh;
+        padding-top: 130px;
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+        transition: all 0.2s;
+    }
+
+    .nav_opened > .nav__menu {
+        visibility: visible;
+        pointer-events: inherit;
+        opacity: 1;
+    }
+
+    .nav_opened > .nav__btn:before {
+        content: 'Close';
+    }
+
+    .nav_opened > .nav__btn {
+        color: #FFF;
+        z-index: 1;
+    }
+
+    .nav__item {
+        margin: 0;
+        flex-grow: 0;
+        height: 30px;
+    }
+
+    .nav__link {
+        color: #FFF;
+    }
+}
+
+

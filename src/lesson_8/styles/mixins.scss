@@ -1,0 +1,21 @@
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin hoveredUnderlined($color: green, $size: 4px) {
+  position: relative;
+  &:hover {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: $size;
+      background-color: $color;
+    }
+  }
+}

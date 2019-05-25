@@ -1,0 +1,25 @@
+.page {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.page__header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 50px;
+}
+
+.page__header:after {
+    width: 100vw;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background: #ececec;
+}
+
+.page__menu {
+    border: 1px solid aqua;
+}
