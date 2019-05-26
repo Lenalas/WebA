@@ -1,0 +1,15 @@
+.page{
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    &__header{
+        height: 90px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+    }
+}

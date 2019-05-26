@@ -1,0 +1,5 @@
+@import './mixins.scss';
+
+.nav__logo{
+    @include absoluteCenter;
+}

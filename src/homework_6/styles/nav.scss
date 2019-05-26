@@ -1,0 +1,76 @@
+@import './media.scss';
+
+.nav{
+    background-color: white;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+    &__menu{
+        display: flex;
+        justify-content: space-around;
+        max-width: 1024px;
+        height: 100%;
+        width: 70%;
+        flex: 20% 1 1;
+        @include laptop {
+            position: absolute;
+            background-color: grey;
+            flex-direction: column;
+            width: 100vw;
+            height: 30vh;
+            align-items: flex-start;
+            padding-left: 20px;
+            justify-content: space-around;
+            visibility: hidden;
+            pointer-events: none;
+            opacity: 0;
+            transition: all 0.2s;
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        @include laptop {
+            margin: 0;
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #15484c;
+        font-weight: bold;
+        transition: color 0.2s linear;
+    }
+    &__btn{
+        display: none;
+        position: relative;
+        border: none;
+        background-color: transparent;
+        @include laptop {
+            display: inherit;
+            z-index: inherit;
+            color: black;
+            margin-left: auto;
+        }
+        &:before {
+            content: "Open";
+            @include absoluteCenter;
+          }
+    }
+    
+}
+
+@media screen and (max-width: $lg - 1px) {
+    .nav_opened > .nav__menu{
+        visibility: visible;
+        pointer-events: inherit;
+        opacity: 1;
+    }
+
+    .nav_opened > .nav__btn{
+        z-index: 1;
+    }
+}

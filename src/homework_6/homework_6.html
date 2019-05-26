@@ -9,8 +9,57 @@
     <title>lesson1</title>
 </head>
 <body>
-    <div>
-        <h1>Hello, world</h1>
+    <div class="page">
+        <header class="page__header">
+            <nav class="nav" id='nav'>
+                <a href="" class="nav__logo">
+                    <img src="https://miacar.ch/static/images/MIACAR_Logo_orange_208@2x.png" alt="" width=50px height="69px" class="active">
+                </a>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="" class="nav__link">
+                            <span class="nav__title">
+                                So funktioniert's
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">
+                            <span class="nav__title">
+                                Unser Sortiment
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">
+                            <span class="nav__title">
+                                Unsere App
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">
+                            <span class="nav__title">
+                                Häufige Fragen
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="nav__btn">
+                    <a href="">Open</a>
+                </button>
+            </nav>
+        </header>
+        <main class="main">
+            <div></div>
+        </main>
     </div>
 </body>
+<script>
+    const nav = document.querySelector('#nav');
+    const btn = nav.querySelector('button');
+    btn.addEventListener('click', () => {
+        nav.classList.toggle('nav_opened');
+    })
+</script>
 </html>
